@@ -4,7 +4,7 @@ Repository for the Bremen Data Challenge Competition 2023
 
 ### Download ready-to-run
 
-This GitHub repository serves for the description of the work and the steps to reproduce the results. It does not contain the data. It is therefore not necessary to clone it as the compressed version contains everything you will need. Please download the compressed version of the repository from [hobbit](https://hobbitdata.informatik.uni-leipzig.de/BBDC2023-Professional-Track/)
+This GitHub repository serves for the description of the work and the steps to reproduce the results. It does not contain the data.
 
 ### Installation
 
