@@ -40,6 +40,12 @@ iii) ```python -m ipykernel install --user --name jk-win --display-name "jk-win"
 
 - I implement 4 neural network architectures MLP, LSTM, GRU, SetTransformer (see models.py) and train them on the data in a 5-fold cross-validation setting. This can be achieved by running ```train.py```.
 
+* Remark:
+
+8 SetTransformer models are trained using all combinations of num_inds (number of inducing points) in [4, 8, 16, 32] and num_heads (number of attention heads) in
+[2, 4], see ```train.py```. In a five-fold cross validation training mode, this leads to ```40``` trained models for the SetTransformer architecture.
+The other three architectures ```LSTM, GRU, MLP``` trained in a 5 fold-cross validation setting lead to ```15``` trained models. In total we get 55 models and use them all for an ensemble prediction. Because each model is configured to output a vector of length 9, we train and predict the "unknown" values for all columns in the test data at the same time!
+
 ### Submission files
 
 They can be found in the folder ```submissions```. The best public submission is ```prediction11.csv```. You can also analyze the other submissions 1 to 15.
